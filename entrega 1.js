@@ -40,7 +40,10 @@ usuario.addBook('El Señor de las moscas', 'William Golding')
 usuario.addBook('Fundacion', 'Issav Asimov')
 
 console.log(usuario)
+
 console.log(usuario.countMascotas())
+
 console.log(usuario.getBookNames())
+
 console.log(usuario.getFullName())
 
