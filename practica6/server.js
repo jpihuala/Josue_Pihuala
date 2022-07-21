@@ -2,6 +2,17 @@ const express = require('express')
 
 const app = express()
 
+app.get('/', (req, res) =>{
+    res.send({ mensaje: 'hola mundo'})
+})
+
+let count = 0
+app.get('/visitas', (req, res) =>{
+    count ++
+    res.send(`la cantidad de visitas es: ${count}`)
+})
+
+
 
 const PORT = 4000
 
