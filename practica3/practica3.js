@@ -31,3 +31,21 @@
 //     { id:5, nombre:'Reloj', precio:67.89 },
 //     { id:6, nombre:'Agenda', precio:78.90 }
 // ]
+
+// const saludar = nombre => {
+//     console.log('saludo')
+//     return nombre
+// }
+
+// saludar()
+
+// const promediar = (a, b) => {
+//     let s = (a + b) /2
+//     return s
+// }
+// console.log(promediar (10,20))
+
+
+
+// callback
+
