@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 1
+  },
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 2
+  },
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 4
+  },
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 5
+  },
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 6
+  }
+]

@@ -3,9 +3,10 @@ const http = require('http')
 console.log(http)
 
 const server = http.createServer((peticion, respuesta) => {
-    respuesta.end('Hola Mundo')
+    respuesta.end('<h1>Hola Mundo</h1>')
 })
 
-// const connectedServer = server.listen(8080, () =>{
-//     console.log(`Servidor Http escuchando en el puerto ${connectedServer.address().port}`)
-// })
+const createServer = server.listen(8080, () =>{
+    console.log(server.address())
+    console.log(`Servidor Http escuchando en el puerto ${server.address().port}`)
+})
