@@ -16,14 +16,10 @@ app.get('/visitas', (req, res)=>{
 
 app.get('/fyh', (req, res)=>{
     const fyh = new Date()
-    const hora = fyh.getHours()
-    const minuto = fyh.getMinutes()
-    const segundos = fyh.getSeconds()
     res.send(`${fyh}`)
 })
 
 const PORT = 4040;
-
 const server = app.listen(PORT,()=>
     console.log(`server http://localhost:${PORT}`)
 );
