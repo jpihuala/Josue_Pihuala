@@ -7,8 +7,10 @@ app.get("/productos", (req, res) => {
     res.send({productos});
 });
 
+
 app.get("/productosRandom", (req, res) => {
-    res.send(Math.random({productos}));
+    let random = Math.floor(Math.random() * (3 - 1 + 1)) + 1
+    res.send()
 });
 
 const PORT = 8080;
