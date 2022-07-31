@@ -4,7 +4,7 @@ const fs = require('fs')
 try {
     let fyh = new Date().toString()  //convierte la variable en texto
     fs.writeFileSync('./fyh.txt', fyh, 'utf-8' )
-    console.log(fyh)
+    // console.log(fyh)
     let lectura = fs.readFileSync('./fyh.txt', 'utf-8')
     console.log(lectura)
 } catch (error) {
