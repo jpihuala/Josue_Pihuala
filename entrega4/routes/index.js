@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
 
 router.get('/productos', (req, res) => {
     res.json(productos)
+    console.log(productos)
 })
 
 
