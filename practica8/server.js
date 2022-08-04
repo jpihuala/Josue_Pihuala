@@ -4,7 +4,7 @@ const{ Router } = express
 const app = express()
 const router = Router()
 
-app.use(express.json())
+app.use(express.json()) // me permite ejecutar funciones...
 
 
 
@@ -22,11 +22,12 @@ router.post('/', (req, res)=>{
     })
 })
 
-router.post('/:id', (req, res)=>{
+router.get('/:id', (req, res)=>{
     const {id} = req.params
     res.json({
         ok: true,
-        mensaje:'todo bien, post'
+        mensaje:'todo bien, post ID',
+        id
     })
 })
 
