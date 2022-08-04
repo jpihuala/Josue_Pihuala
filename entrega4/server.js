@@ -7,13 +7,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use('/api', rutas)
 
-app.listen(8080, err => {
-    if(err) {
-        console.log(`Ocurrió un error: ${err}`)
-    } else {
-
-        console.log('Escuchando el puerto 8080')
-    }
-
-
+const PORT = process.env.PORT || 4000
+app.listen(PORT, ()=>{
+    console.log('el server')
 })

@@ -1,21 +1,17 @@
 const { Router } = require('express')
 const router = Router()
 
-
-
 const productos = []
 
 router.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-// GET '/api/productos' -> devuelve todos los productos.
 
 router.get('/productos', (req, res) => {
     res.json(productos)
 })
 
-// POST '/api/productos' -> recibe y agrega un producto, y lo devuelve con su id asignado.
 
 router.post('/productos', (req, res) => {
 
@@ -26,7 +22,6 @@ router.post('/productos', (req, res) => {
 
 })
 
-// GET '/api/productos/:id' -> devuelve un producto según su id.
 
 router.get('/productos/:id', (req, res) => {
     const id = Number(req.params.id)
@@ -41,7 +36,6 @@ router.get('/productos/:id', (req, res) => {
     res.json(productoEncontrado)
 })
 
-// PUT '/api/productos/:id' -> recibe y actualiza un producto según su id.
 
 router.put('/productos/:idModificar', (req, res) => {
 
@@ -63,9 +57,6 @@ router.put('/productos/:idModificar', (req, res) => {
 
     res.json(productos)
 })
-
-
-// DELETE '/api/productos/:id' -> elimina un producto según su id.
 
 router.delete('/productos/:idBorrar', (req, res) => {
 
