@@ -1,0 +1,20 @@
+{
+  "name": "leonardo_pihuala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpihuala/Leonardo_Pihuala.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpihuala/Leonardo_Pihuala/issues"
+  },
+  "homepage": "https://github.com/jpihuala/Leonardo_Pihuala#readme"
+}
