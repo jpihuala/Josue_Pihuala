@@ -27,7 +27,7 @@ routerapp.get("/:id", async (req, res) => {
     try {
         const {id} = req.params
         const contenedor = new Contenedor ('./productos.txt')
-        const productos = await contenedor.getById({id})
+        const productos = await contenedor.getById(parseInt(id))
         console.log(productos)
         res.send({status: 200, productos})
     } catch (error) {
@@ -35,21 +35,26 @@ routerapp.get("/:id", async (req, res) => {
     }
 });
 
-routerapp.post('/', (req, res) => {
-    const objProducto = req.body
-    const contenedor = new Contenedor ('../productos.txt')
-    
-})
+routerapp.post("/", async (req, res) => {
+	const objProducto = req.body;
+	const contenedor = new Contenedor("./productos.txt");
+	contenedor.save(objProducto);
+	res.json({ message: "Producto guardado", objProducto });
+});
 
-routerapp.get("/productosRandom", (req, res) => {
-    const contenedor = new Contenedor ('../productos.txt')
-    contenedor.getProductRandom()
-        .then(producto => {
-            res.send({status: 200, producto})
-        })
-        .catch(error => {
-            res.send({status: 500, error})
-        })
+routerapp.put("/:id", async (req, res) => {
+	const { id } = req.params;
+	const objProducto = req.body;
+	const contenedor = new Contenedor("./productos.txt");
+	contenedor.updateById({ id: parseInt(id), ...objProducto });
+	res.json({ message: "Producto actualizado" });
+});
+
+routerapp.delete("/:id", async (req, res) => {
+	const { id } = req.params;
+	const contenedor = new Contenedor("./productos.txt");
+	contenedor.deleteById(parseInt(id));
+	res.json({ message: "Producto eliminado" });
 });
 
 
