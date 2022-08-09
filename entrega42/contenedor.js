@@ -63,7 +63,7 @@ class Contenedor{
         try{
             // let data = await fs.promises.readFile(this.ruta, 'utf-8')
             // let dataParse =JSON.parse(data)
-            let data = await this.#readFileFunction(this.ruta)
+            const data = await this.#readFileFunction(this.ruta)
             if (data.length) {
                 // console.log(dataParse)
                 return data
