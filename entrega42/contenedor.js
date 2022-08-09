@@ -12,13 +12,11 @@ class Contenedor{
     }
 
     async save(obj){
-
         try{
             let data = await this.#readFileFunction(this.ruta)//await fs.promises.readFile(this.ruta, 'utf-8')
             // let dataParse =JSON.parse(data)
-            if(data.length){
+            if(data.length){ 
                 await fs.promises.writeFile(this.ruta, JSON.stringify([...data, {...obj, id: data.length + 1 }], null, 2))
-
             } else{
                 await fs.promises.writeFile(this.ruta, JSON.stringify([{...obj, id: dataParse.length + 1 }], null, 2))
             } 
@@ -28,7 +26,7 @@ class Contenedor{
         }
     }
     
-    async updateById(id){
+    async updateById(obj){
         try{
             let data = await this.#readFileFunction(this.ruta)
             // let dataParse =JSON.parse(data)
@@ -46,7 +44,6 @@ class Contenedor{
         }
         
     }
-
     async getById(id){
         try{
             let data = await this.#readFileFunction(this.ruta)
@@ -63,7 +60,6 @@ class Contenedor{
         }
         
     }
-
     async getAll(){
         try{
             // let data = await fs.promises.readFile(this.ruta, 'utf-8')
@@ -80,7 +76,6 @@ class Contenedor{
         } catch (error) {
             console.log(error)
         }
-
     }
     async deleteById(id){
         try{
@@ -99,27 +94,6 @@ class Contenedor{
             console.log(error)
         }
     }
-    async deleteAll(){
-        try{
-            let dataParseFiltrado = []
-            await fs.promises.writeFile(this.ruta, JSON.stringify(dataParseFiltrado, null, 2), 'utf-8')
-            console.log("se eliminardon todos los productos")
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-    async getProductRandom(){
-        try {
-            let data = await this.#readFileFunction(this.ruta)
-            let random = Math.floor(Math.random() * data.length)
-            return data[random]
-        } catch (error) {
-            console.log(error)
-        }
-    } 
-
-
 }
 
 
