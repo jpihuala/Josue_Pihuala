@@ -3,9 +3,9 @@ const { Contenedor } = require("./contenedor");
 const app = express();
 
 
-app.use(express.static('public'))
-app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+app.use(express.json())
+app.use(express.static('public'))
 
 // const productos = JSON.parse(fs.readFileSync("../productos.txt", "utf-8"));
 
@@ -13,26 +13,18 @@ const {Router} = express
 const routerapp = Router()
 
 routerapp.get("/", async (req, res) => {
-    try {
-        const contenedor = new Contenedor ('./productos.txt')
-        const productos = await contenedor.getAll()
-        res.send({status: 200, productos})
-        
-    } catch (error) {
-        res.send({status: 500, error})
-    }
+	const contenedor = new Contenedor("./productos.txt");
+	console.log(contenedor);
+	const productos = await contenedor.getAll();
+	res.json({ productos });
 });
 
 routerapp.get("/:id", async (req, res) => {
-    try {
-        const {id} = req.params
-        const contenedor = new Contenedor ('./productos.txt')
-        const productos = await contenedor.getById(parseInt(id))
-        console.log(productos)
-        res.send({status: 200, productos})
-    } catch (error) {
-        res.send({status: 500, error})
-    }
+	const { id } = req.params;
+	const contenedor = new Contenedor("./productos.txt");
+	const producto = await contenedor.getById(parseInt(id));
+	console.log(producto);
+	res.json({ producto });
 });
 
 routerapp.post("/", async (req, res) => {
