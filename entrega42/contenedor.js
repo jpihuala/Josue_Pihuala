@@ -30,7 +30,7 @@ class Contenedor{
         try{
             let data = await this.#readFileFunction(this.ruta)
             // let dataParse =JSON.parse(data)
-            let objIndex = data.findIndex(prod => prod.id === obj.id)
+            const objIndex = data.findIndex(prod => prod.id === obj.id)
             // console.log(producto)
             if (objIndex !== -1) {
                 data[objIndex] = obj
@@ -46,10 +46,9 @@ class Contenedor{
     }
     async getById(id){
         try{
-            let data = await this.#readFileFunction(this.ruta)
+            const data = await this.#readFileFunction(this.ruta)
             // let dataParse =JSON.parse(data)
-            let producto = data.find(producto => producto.id === id)
-            console.log(producto)
+            const producto = data.find(producto => producto.id === id)
             if (producto) {
                 console.log(producto)
             } else {
@@ -81,10 +80,10 @@ class Contenedor{
         try{
             // let data = await fs.promises.readFile(this.ruta, 'utf-8')
             // let dataParse =JSON.parse(data)
-            let data = await this.#readFileFunction(this.ruta)
+            const data = await this.#readFileFunction(this.ruta)
             let producto = data.find(producto => producto.id === id)
             if (producto) {
-                let dataParseFiltrado = data.filter(producto => producto.id !== id)
+                const dataParseFiltrado = data.filter(producto => producto.id !== id)
                 await fs.promises.writeFile(this.ruta, JSON.stringify(dataParseFiltrado, null, 2), 'utf-8') 
                 console.log("producto eliminado")
             } else {

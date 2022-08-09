@@ -15,18 +15,18 @@
     "title": "Escuadra",
     "price": 123.45,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 3
+  },
+  {
+    "title": "zapato",
+    "price": "1000",
+    "thumbnail": "xxxx",
     "id": 4
   },
   {
-    "title": "Escuadra",
-    "price": 123.45,
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "title": "media",
+    "price": "2000",
+    "thumbnail": "cc",
     "id": 5
-  },
-  {
-    "title": "Escuadra",
-    "price": 123.45,
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
-    "id": 6
   }
 ]
