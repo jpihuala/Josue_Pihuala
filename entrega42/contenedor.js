@@ -1,4 +1,5 @@
 const fs = require('fs')
+const objectInspect = require('object-inspect')
 
 class Contenedor{
     constructor(ruta){
@@ -16,11 +17,11 @@ class Contenedor{
             let data = await this.#readFileFunction(this.ruta)//await fs.promises.readFile(this.ruta, 'utf-8')
             // let dataParse =JSON.parse(data)
             if(data.length){ 
-                await fs.promises.writeFile(this.ruta, JSON.stringify([...data, {...obj, id: data.length + 1 }], null, 2))
+                await fs.promises.writeFile(this.ruta, JSON.stringify([...data, {...obj, id: data[data.length -1].id + 1 }], null, 2))
             } else{
-                await fs.promises.writeFile(this.ruta, JSON.stringify([{...obj, id: dataParse.length + 1 }], null, 2))
+                await fs.promises.writeFile(this.ruta, JSON.stringify([{...obj, id: 1 }], null, 2))
             } 
-                console.log(`El archivo tiene el id: ${data.length+ 1} `)
+                console.log(`El archivo tiene el id: ${data.length + 1} `)
         } catch (error) {
             console.log(error)
         }
