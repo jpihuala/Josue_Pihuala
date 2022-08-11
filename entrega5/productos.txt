@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 1
+  },
+  {
+    "id": 2,
+    "title": "Producto 2",
+    "price": "100",
+    "thumbnail": "categoria 2"
+  },
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/220px-Squadra_45.jpg",
+    "id": 3
+  },
+  {
+    "title": "media",
+    "price": "2000",
+    "thumbnail": "cc",
+    "id": 4
+  },
+  {
+    "title": "ghfgh",
+    "price": "453",
+    "thumbnail": "gdfgd",
+    "id": 5
+  },
+  {
+    "title": "ewew",
+    "price": "32323",
+    "thumbnail": "fsfsdf",
+    "id": 7
+  },
+  {
+    "title": "dfsfsd",
+    "price": "21312",
+    "thumbnail": "dadsa",
+    "id": 8
+  }
+]
