@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Alfha",
+    "price": 123.45,
+    "thumbnail": "https://chaupoo.com.ar/wp-content/uploads/2020/05/JOS_1274-300x300.jpg",
+    "id": 1
+  },
+  {
+    "id": 2,
+    "title": "Beta",
+    "price": "100",
+    "thumbnail": "https://chaupoo.com.ar/wp-content/uploads/2020/05/JOS_1214-300x300.jpg"
+  },
+  {
+    "title": "Delta",
+    "price": 123.45,
+    "thumbnail": "https://chaupoo.com.ar/wp-content/uploads/2020/05/63270364-d5b8-43b9-94d4-12eba78aaf42-300x300.jpg",
+    "id": 4
+  },
+  {
+    "title": "Gamma",
+    "price": 123.45,
+    "thumbnail": "https://chaupoo.com.ar/wp-content/uploads/2020/05/db2d2d0d-1a83-4233-ad4b-afdeb190804e-300x300.jpg",
+    "id": 5
+  },
+  {
+    "title": "Kappa",
+    "price": 123.45,
+    "thumbnail": "https://chaupoo.com.ar/wp-content/uploads/2020/06/WhatsApp-Image-2020-06-05-at-00.04.13-300x300.jpeg",
+    "id": 6
+  },
+  {
+    "title": "chocolat",
+    "price": "2000",
+    "thumbnail": "https://chaupoo.com.ar/wp-content/uploads/2020/06/283bfbcd-ab5f-4e55-b069-7c3845b9d7d1-300x300.jpg",
+    "id": 6
+  }
+]
